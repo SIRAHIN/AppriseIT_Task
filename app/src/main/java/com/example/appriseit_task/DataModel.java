@@ -1,3 +1,5 @@
+package com.example.appriseit_task;
+
 import java.util.List;
 
 public class DataModel {

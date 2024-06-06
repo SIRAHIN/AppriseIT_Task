@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 if (response.isSuccessful() && response.body() != null) {
                     // -- Taking first top 3 user list -- //
                     List<LeaderboardResponse.User> users = response.body().data.host_daily.top3;
-                    // -- Added All other user along with T0P3 -- //
+                    // -- Added All other user along with TP3 -- //
                     users.addAll(response.body().data.host_daily.all);
                     userAdapter = new UserAdapter(MainActivity.this, users);
                     recyclerView.setAdapter(userAdapter);
